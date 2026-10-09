@@ -3,7 +3,7 @@
 **A Real-Time Pharmaceutical Supply Chain Analytics, Traceability, Counterfeit Detection, and Recall Management Platform Using Neo4j and MongoDB**
 
 BCSE406L NoSQL Databases · VIT Vellore · Guide: Dr. D. Vivek
-Team: Vedant Patil (23BCE0816), Siya Aggarwal (23BCE0772)
+Team: Vedant Patil (23BCE0816), Siya Aggarwal (23BCE0778)
 
 SupplyShield combines established techniques (graph traversal, pattern detection, polyglot persistence) for pharma
 traceability. MongoDB is the system of record for supply-chain events; a change-stream sync service mirrors the
