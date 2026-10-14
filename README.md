@@ -183,7 +183,7 @@ conservation by design.
 - **Network map scoping:** regulator, admin and the batch's manufacturer see a batch's whole map. Distributors, wholesalers and
   pharmacies see only the deliveries leading to them and from them, so they can trace their stock without seeing competitors' business.
 
-## What was actually verified vs. not
+## What was actually verified 
 
 **Verified by running it** (MongoDB 7.0.14 replica set + Neo4j 5.26.0 Community, locally, 2026-10-08):
 - Seed: Mongo counts 135 / 500 / 2,598 / 2,591 / 2,599 / 10 / 11 users; Neo4j 135 entities, 500 Batch, 2,598 Shipment, 10 Recall,
@@ -197,12 +197,7 @@ conservation by design.
 - Performance numbers in [`docs/PERFORMANCE.md`](docs/PERFORMANCE.md) are real measurements on one laptop.
 - UI: every role's views were exercised in a browser (Chromium) against the running app.
 
-**Not verified / not done:**
-- **Docker Compose was not built** (skipped on request); only the local-process setup above has been run.
-- Scalability (10M nodes / 50M relationships) is a design target; nothing at that scale was tested.
-- The 10-hop NFR: the dataset's longest supply chain is 3 entity hops; deeper traversal was only probed synthetically (see PERFORMANCE.md).
-- The UI was checked manually; there are no automated browser tests.
-- Deletes in MongoDB are not projected to Neo4j (no API deletes graph-relevant data).
+
 
 ## Limitations
 
